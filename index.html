@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="container">
+    <div class = "img-container">
+    <div class="wtf"> <h1 >Odin</h1></div>
+        <img src="odin-lined.png" alt="" class="logo">
+        <div class="credit">Photo by Halie West on <a href="https://unsplash.com/">Unsplash</a></div>
+
+        <img src="photo-1585202900225-6d3ac20a6962.avif" class="background-img" alt="foliage"> 
+    </div>
+        <div class="form-container">
+            <h3>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest 
+                dreams. Sign up <em>now</em> to get started. <br /> 
+                <br />
+                You <em>know</em> you want to.
+            </h3>
+            <form action="post">
+                    <div class="form-styling">
+                        <label for="first_name">first name</label>
+                        <input id="first_name" placeholder="John" type="text">
+                  
+
+                         <label for="email">email</label>
+                          <input id="email" placeholder="john_doe@gmail.com" type="text">
+            
+                         <label for="password1">password</label>
+                        <input id="password1" type="text">
+                    </div>
+
+                    <div class="form-styling">
+                        <label for="last_name">last name</label>
+                        <input id="last_name" placeholder="Doe" type="text">
+                  
+                    <label for="phone">phone number</label>
+                    <input id="phone" placeholder = "(xxx) xxx-xxxx" type="text">
+
+                    <label for="password2">confirm password</label>
+                    <input id="password2"  type="text">
+                    </div>
+                
+            </form>
+            <button type="submit">Create Account</button>
+            <p class="login">  Already have an account? <a href="">Log in</a> 
+        </p>
+        </div>
+        
+    </div>
+  
+   
+
+    
+  
+ 
+</body>
+</html>
+
+<!-- 
+    GENERAL: 
+    1. How do I get rid of the white line outside of the image container left side?
+        -something to do with that margin:auto thing maybe...? or maybe something with the div containers needing to take up 100% of vw?
+    2. How to get the div to show up behind the logo? How to apply proper transparency?
+        -some issue w needing to apply diff z-indexes 
+    3. How to put a mask in for the phone number field? Is there a step beyond the very basic placeholder I have?
+    4. How to use :valid and :invalid for styling here? 
+        -Why does using green for :valid also make the border of the whole form green?
+    5. How to incorporate js and give error message w/ :invalid, incl. case where they are both blank?
+        -maybe set up a keystroke event trigger on the second password slot-- if any new character does not match the character at the equiv index 
+        in password 1, show a warning sign that the passwords don't match 
+    6. How to style the fieldset/legend to match and not cause weird issues?
+    7. Does the form have a bit of a shadow box/border on it? How to mimic it properly? 
+    8. Does discord have some general advice about how to eyeball distances etc when looking at a pic prototype vs making the site? Not sure if mine are correct
+        -What font is being used for the labels? How to match when using an image instead of a site where I can check?
+    9. Fix margin/padding around bottom of form and above button 
+-->
